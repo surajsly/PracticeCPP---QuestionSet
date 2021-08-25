@@ -23,8 +23,6 @@ int sumOfAllSubMatrices(int a[][4] , int n , int m) {
 			int top_left = (i + 1) * (j + 1);
 			int bottom_right = (n - i) * (m - j);
 			totalsum += (top_left * bottom_right * a[i][j]);
-
-
 		}
 	}
 	return totalsum;
